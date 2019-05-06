@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfAppSample.StyleSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppSample"
+        mc:Ignorable="d"
+        Title="StyleSample" Height="300" Width="300">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Background" Value="DarkBlue"/>
+            <Setter Property="Foreground" Value="Yellow"/>
+            <Setter Property="FontSize" Value="25"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="DarkGray"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <Label Content="A1"/>
+            <Label Content="A2"
+                   Background="Green"
+                   Foreground="Red"
+                   FontSize="40"/>
+            <Label Content="A3"/>
+            <Button Content="B1"/>
+            <Button Content="B2"
+                    Background="DarkCyan"/>
+            <Button Content="B3"/>
+        </StackPanel>
+    </Grid>
+</Window>
